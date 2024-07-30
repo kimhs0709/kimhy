@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'my_first_page.dart';
+import 'flexible.dart';
 void main() {
   runApp(const MyApp());
 }
