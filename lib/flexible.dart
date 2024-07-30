@@ -30,6 +30,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         )
         //출처: https://juntcom.tistory.com/271 [쏘니의 개발블로그:티스토리]
-    )
+    );
   }
 }
