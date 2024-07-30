@@ -11,29 +11,47 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("안녕하세요"),
-      ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: const <Widget>[
-            ListTile(
-              title: Text("Menu 1"),
-            ),
-            DrawerHeader(
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                ),
-                child: Text("Drawer Header Part"))
-          ],
+        appBar: AppBar(
+          title: const Text("안녕하세요"),
         ),
-      ),
-      body: const Center(child: Text("HELLO WORLD")),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => print("click click"),
-        child: const Icon(Icons.mouse),
-      ),
+        body: Container(
+          alignment: Alignment.center,
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: MediaQuery.of(context).size.width/2,
+                        height: 200,
+                        color: Colors.blue,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/2,
+                        height: 200,
+                        color: Colors.red,
+                      ),
+                    ]
+                ),
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: MediaQuery.of(context).size.width/2,
+                        height: 200,
+                        color: Colors.orange,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width/2,
+                        height: 200,
+                        color: Colors.green,
+                      ),
+                    ]
+                )
+              ]
+          ),
+        )
     );
   }
 }
