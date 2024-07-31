@@ -1,27 +1,33 @@
 import 'package:flutter/material.dart';
 
+class image extends StatelessWidget {
+  const image({super.key});
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('이미지 앱 바입니다.'),
+      appBar: AppBar(
+        title: const Text("Image"),
+      ),
+      body: Center(
+        child: LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints constraints) {
+            double width = constraints.maxWidth * 0.5;
+            double height = constraints.maxHeight * 0.5;
+
+            return SizedBox(
+              width: width,
+              height: height,
+              child: Image.network(
+                  "https://for.stella.place/assets/Stella_R3_iOS_1024.png",
+                  fit: BoxFit.contain),
+            );
+          },
         ),
-        body: Container(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height,
-            child: Image.network('https://th.bing.com/th/id/OIP.xC9PH2P_BPDr-Y70j0xphAHaEK?rs=1&pid=ImgDetMain')
-        )
+      ),
     );
   }
+}
 }
 
 
