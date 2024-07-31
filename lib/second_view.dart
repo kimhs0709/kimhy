@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class SecondView extends StatefulWidget {
-  const SecondView({super.key});
+class Alert extends StatefulWidget {
+  const Alert({super.key});
 
   @override
-  State<SecondView> createState() => _SecondViewState();
+  State<Alert> createState() => _AlertState();
 }
 
-class _SecondViewState extends State<SecondView> {
+class _AlertState extends State<Alert> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

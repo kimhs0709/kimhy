@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'second_view.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class navigator_bar extends StatefulWidget {
+  const navigator_bar({super.key});
 
   @override
-  State<MyHomePage> createState() => MyHomePageState();
+  State<navigator_bar> createState() => navigator_barState();
 }
 
-class MyHomePageState extends State<MyHomePage> {
+class navigator_barState extends State<navigator_bar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,8 +17,8 @@ class MyHomePageState extends State<MyHomePage> {
         ),
         body: Center(
           child: GestureDetector(
-            onTap: () => Navigator.push(context, MaterialPageRoute(
-                builder: (_) => SecondView())
+            onTap: () => navigator_bar.push(context, MaterialPageRoute(
+                builder: (_) => navigator_bar())
             ),
             child: Container(
               padding: EdgeInsets.all(15),
