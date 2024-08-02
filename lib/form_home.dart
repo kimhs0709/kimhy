@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 
-class form extends StatefulWidget {
-  const form({super.key});
+class Form1 extends StatefulWidget {
+  const Form1({super.key});
 
   @override
-  State<form> createState() => _formState();
+  State<Form1> createState() => _Form1State();
 }
 
-class _formState extends State<form> {
+class _Form1State extends State<Form1> {
 
   final _key = GlobalKey<FormState>();
   late String _username, _email;

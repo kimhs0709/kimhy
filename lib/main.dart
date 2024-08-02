@@ -10,9 +10,9 @@ import 'button.dart';
 import 'navigator_bar.dart';
 import 'list_view.dart';
 import 'scrollview_pagination.dart';
-import 'navigator_bar.dart';
+import 'navigator.dart';
 import 'form.dart';
-import '../view/album_provider_view.dart'; // Import AlbumView
+import '../view/AlbumView.dart'; // Import AlbumView
 
 void main() {
   runApp(const MyApp());
